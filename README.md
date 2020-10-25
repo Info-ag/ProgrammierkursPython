@@ -1,1 +1,1 @@
-# ProgrammierKursPython
+Python Anfänger Programmierkurs
