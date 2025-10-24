@@ -1,6 +1,7 @@
-Python Anfänger Programmierkurs
+# Python Anfänger Programmierkurs
 
 ## Konzept
+- 6 Tage a 1,5h online
 - `30-45min` Frontal Theorie
 - `45min - 1h` Aufgaben in Gruppen
 - `30min` Zeitpuffer, Mentoren Debrief
@@ -18,7 +19,7 @@ Plenum:
 - Float, Int
 - Vergleichsoperationen + Boolscher Kram
 - Mathematische Ops
-	
+
 Gruppen:
 - Vorstellungsrunde
 - Verkaufsaufgabe
@@ -91,6 +92,7 @@ Plenum:
 	- Baujahr
 	- Reifen
 		- Luftdruck
+		- Hersteller
 	- Bus
 	- LKW
 	- Fahr Methode, die unterschiedliche Geschwindigkeiten printed
