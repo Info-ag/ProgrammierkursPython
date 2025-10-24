@@ -11,14 +11,14 @@
 ### Tag 1
 Plenum:
 - Begrüßung, Ablauf, Einteilung in Gruppen (vllt schon vorher durch Email)
-- Jupyter Setup
+- Python & Google Colab
 - print
 - Variablen (Strings)
 - input
 - if
 - Float, Int
 - Vergleichsoperationen + Boolscher Kram
-- Mathematische Ops
+- Mathematische Operatoren: +, -, /, *, **, //, ^, |, %
 
 Gruppen:
 - Vorstellungsrunde
