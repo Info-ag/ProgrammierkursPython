@@ -1,102 +1,63 @@
 # Python Anfänger Programmierkurs
 
 ## Konzept
-- 6 Tage a 1,5h online
-- `30-45min` Frontal Theorie
-- `45min - 1h` Aufgaben in Gruppen
-- `30min` Zeitpuffer, Mentoren Debrief
+- 2 Tage (Samstag/Sonntag) in Präsenz, jeweils 10–17 Uhr
+- 5,5h Programm pro Tag: 1h Mittagspause und 2× 15min Pause
+- Wir arbeiten in Google Colab, alles läuft über die Notebooks:
+  - Die Theorie steht im Notebook, die Mentoren erklären sie abschnittsweise.
+  - Nach jedem Abschnitt kommen kurze Aufgaben direkt im Notebook. Die Mentoren gehen herum, helfen und fangen Fehler ab.
+  - Aufgaben mit *(Zusatz)* sind für die Schnellen.
+- Am Ende von Tag 2 programmieren alle in Zweiergruppen ein eigenes Spiel (Hangman).
+- Pro Block gibt es ein Notebook, jeweils als `student_version` (ohne Lösungen) und `teacher_version` (mit Lösungen und Hinweisen für Mentoren).
 
-## Inhalte
+## Ablauf
 
-### Tag 1
-Plenum:
-- Begrüßung, Ablauf, Einteilung in Gruppen (vllt schon vorher durch Email)
-- Python & Google Colab
-- print
-- Variablen (Strings)
-- input
-- if
-- Float, Int
-- Vergleichsoperationen + Boolscher Kram
-- Mathematische Operatoren: +, -, /, *, **, //, ^, |, %
+### Samstag: Grundlagen
 
-Gruppen:
-- Vorstellungsrunde
-- Verkaufsaufgabe
-- FizzBuzz Aufgabe
+| Zeit | Block | Theorie | Aufgaben |
+|---|---|---|---|
+| 10:00–11:15 | [Block 1](Programming_course_Day1_Block1_student_version.ipynb) | Begrüßung, Colab, print, Variablen/Strings, input, Kommentare, if | Hallo Welt, Vorstellen, Passwortabfrage |
+| 11:15–11:30 | *Pause* | | |
+| 11:30–12:30 | [Block 2](Programming_course_Day1_Block2_student_version.ipynb) | int/float, Vergleiche, Booleans, mathematische Operatoren inkl. `//` und `%` | Gerade/ungerade, Getränkeverkauf, FizzBuzz, *Schaltjahr* |
+| 12:30–13:30 | *Mittagspause* | | |
+| 13:30–15:00 | [Block 3](Programming_course_Day1_Block3_student_version.ipynb) | while, for, range, Listen, Indexe, `len`, `in` | Countdown, 7er-Reihe, Zweierpotenzen, Alphabet rückwärts, Vokale zählen, Quersumme |
+| 15:00–15:15 | *Pause* | | |
+| 15:15–17:00 | [Block 4](Programming_course_Day1_Block4_student_version.ipynb) | Slices, Löschen, Dictionaries | Palindrom, Einkaufsliste, Preisrechner, Buchstaben zählen, *Caesar* |
 
-### Tag 2
-Plenum:
-- Wiederholung
-- FizzBuzz Besprechen
-- while
-- range
-- for
-- Listen, Indexe, len
+### Sonntag: Funktionen, Klassen, Projekt
 
-Gruppen:
-- Berechne 2er Potenzen von 1 bis x
-- for loop mit range slicing
-- String rückwärts
-- Quersumme
+| Zeit | Block | Theorie | Aufgaben |
+|---|---|---|---|
+| 10:00–11:15 | [Block 1](Programming_course_Day2_Block1_student_version.ipynb) | Wiederholung, import/random, Funktionen, Parameter, return | Wiederholungsaufgabe, Ratespiel, sum_to_n, ist_gerade |
+| 11:15–11:30 | *Pause* | | |
+| 11:30–12:30 | [Block 2](Programming_course_Day2_Block2_student_version.ipynb) | Funktionen kombinieren, Standardwerte, Geltungsbereich; Klassen, Objekte, Attribute, Methoden | min_of_list, häufigster Buchstabe, rotate_string, *Caesar mit Funktionen*, Tier |
+| 12:30–13:30 | *Mittagspause* | | |
+| 13:30–14:15 | [Block 3](Programming_course_Day2_Block3_student_version.ipynb) | Wiederholung Klassen, Vererbung, OOP vs. funktional | Hund/Vogel |
+| 14:15–16:30 | [Block 4](Programming_course_Day2_Block4_student_version.ipynb) | Projekt Hangman (Pause nach Bedarf) | Schritt für Schritt aus Funktionen, dann Erweiterungen (Galgen in ASCII, Klasse, ...) |
+| 16:30–17:00 | | Vorstellung der Spiele, Ausblick: wie geht es weiter | |
 
-### Tag 3
-Plenum:
-- Besprechung Quersumme beide Lösungen (Modulo, String)
-- Listen ranges, Löschen, Slicing
-- import, random
-- Funktionen
-- Parameter
-- return
+Das Projekt ist ohne Klassen lösbar, die Klassenversion ist eine Erweiterung.
+Die Grundversion zählt nur die Versuche herunter, den ASCII-Galgen kann man als Erweiterung einbauen.
 
-Gruppen:
-- Ratespiel
-- Vorstell Funktion mit Übergabeparameter
-- Sum to n function
-- find min of list
-- string reverse function
-- Palindrom
+## Material
+- `Programming_course_DayX_BlockY_{student,teacher}_version.ipynb`: die Notebooks pro Block
+- `Aufgabensammlung_{student,teacher}_version.ipynb`: Zusatzaufgaben, u.a. die Themen, die es nicht mehr in den Kurs geschafft haben (2D-Listen, Rekursion, Effizienz, Sortieren, Binäre Suche, Sets, Permutationen, Filmbewertungen)
+- `CoronaExample/`: optionales Material zu CSV-Dateien und Matplotlib
+- `images/`: Bilder für die Notebooks. Sie werden in Colab über GitHub (raw-URL auf den Branch `2days`) eingebunden, damit sie auch ohne lokale Dateien angezeigt werden.
 
-### Tag 4
-Plenum:
-- Besprechung Palindrom
-- 2 dim Listen
-- Dictionaries
+## Notebooks in Colab öffnen
+`https://colab.research.google.com/github/Info-ag/ProgrammierkursPython/blob/2days/<Dateiname>.ipynb` \
+Danach *Datei → Kopie in Drive speichern*, sonst gehen die Änderungen verloren.
 
-Gruppe:
-- Pathfinding
-- rotate_string
-- Preisrechner
-- Caesar Verschlüsselung (Listenknobelei)
+## Zusatzinhalte (Ausblick am Ende)
+1. Was ist der Unterschied zwischen .ipynb und .py Dateien? Was sind IDEs und wie installiere ich diese?
+2. Python Libraries: numpy (große Datentabellen), pandas (csv Datentabellen einlesen), matplotlib (Diagramme/Plots)
+3. git Versionsverwaltung
+4. Typisierung von Variablen in Python
 
-### Tag 5
-Plenum:
-- Besprechung Caesar
-- Sortieren
-- Listen ohne Duplikate (Dictionaries)
-- ggfs. Hashing @Marvin
 
-Gruppe:
-- Straight Forwards suche
-- Binäre Suche
-- Vllt eine mehr für gaaanz schnelle @Marvin
-
-### Tag 6: Klassen @David
-Plenum:
-- Besprechung Binäre Suche
-- Klassen: Konstruktoren, Self, Attribute, Methoden
-- Klassenbeispiel: Fahrzeuge
-	- Auto
-	- Farbe
-	- Autohersteller
-	- Baujahr
-	- Reifen
-		- Luftdruck
-		- Hersteller
-	- Bus
-	- LKW
-	- Fahr Methode, die unterschiedliche Geschwindigkeiten printed
-- OOP vs Funktional
-
-Gruppe:
-- @David
+- laptops ersatz
+- vorher da sein (Luan+ich eine Stunde vorher)
+- seminarraum trennen
+- mentoren gruppen, labbie gruppen trennen wie?
+- colab oder jupyterhub? alles vorher fertig aufsetzen
