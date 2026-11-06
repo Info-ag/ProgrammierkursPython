@@ -45,6 +45,17 @@ Die Grundversion zählt nur die Versuche herunter, den ASCII-Galgen kann man als
 - `CoronaExample/`: optionales Material zu CSV-Dateien und Matplotlib
 - `images/`: Bilder für die Notebooks. Sie werden in Colab über GitHub (raw-URL auf den Branch `2days`) eingebunden, damit sie auch ohne lokale Dateien angezeigt werden.
 
+## Notebooks im Browser öffnen (JupyterLite, ohne Konto)
+**https://info-ag.github.io/ProgrammierkursPython/lab/index.html**
+
+- Python läuft direkt im Browser (Pyodide), es wird kein Konto und kein Server gebraucht.
+- Dort liegen nur die Student-Versionen (`Tag1_Block1.ipynb` … `Tag2_Block4.ipynb`, `Zusatz_Aufgabensammlung.ipynb`), keine Lösungen.
+- Änderungen werden nur im Browser des jeweiligen Geräts gespeichert. Zum Mitnehmen: *File → Download*.
+- Die Seite wird bei jedem Push auf `2days` automatisch neu gebaut (`.github/workflows/jupyterlite.yml` → Branch `gh-pages`).
+  Den Inhalt stellt `jupyterlite/prepare_content.py` zusammen; es ersetzt dabei die Colab-Hinweise durch JupyterLite-Hinweise.
+- Lokal testen: `pip install -r jupyterlite/requirements.txt`, `python jupyterlite/prepare_content.py`,
+  dann in `jupyterlite/`: `jupyter lite build --contents content --output-dir ../_site` und `python -m http.server -d ../_site`.
+
 ## Notebooks in Colab öffnen
 `https://colab.research.google.com/github/Info-ag/ProgrammierkursPython/blob/2days/<Dateiname>.ipynb` \
 Danach *Datei → Kopie in Drive speichern*, sonst gehen die Änderungen verloren.

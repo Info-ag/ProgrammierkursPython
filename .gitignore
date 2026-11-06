@@ -1,1 +1,6 @@
 .ipynb_checkpoints
+# JupyterLite (wird von jupyterlite/prepare_content.py bzw. dem Build erzeugt)
+jupyterlite/content/
+jupyterlite/.jupyterlite.doit.db
+_site/
+.claude/launch.json
