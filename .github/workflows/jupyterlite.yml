@@ -1,0 +1,41 @@
+name: JupyterLite-Seite bauen
+
+on:
+  push:
+    branches: [2days]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: jupyterlite-pages
+  cancel-in-progress: true
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: JupyterLite installieren
+        run: pip install -r jupyterlite/requirements.txt
+
+      - name: Student-Notebooks zusammenstellen
+        run: python jupyterlite/prepare_content.py
+
+      - name: Seite bauen
+        working-directory: jupyterlite
+        run: jupyter lite build --contents content --output-dir ../_site
+
+      - name: Auf gh-pages veroeffentlichen
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./_site
+          publish_branch: gh-pages
+          force_orphan: true
