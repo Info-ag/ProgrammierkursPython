@@ -84,9 +84,16 @@ def main() -> None:
         shutil.rmtree(CONTENT)
     CONTENT.mkdir(parents=True)
     for src_name, dst_name in NOTEBOOKS.items():
-        nb = json.loads((ROOT / src_name).read_text(encoding="utf-8"))
-        text = json.dumps(convert(nb), ensure_ascii=False, indent=1) + "\n"
-        (CONTENT / dst_name).write_text(text, encoding="utf-8")
+        source = ROOT / src_name
+        destination = CONTENT / dst_name
+        destination.parent.mkdir(parents=True, exist_ok=True)
+
+        if source.suffix == ".ipynb":
+            nb = json.loads(source.read_text(encoding="utf-8"))
+            text = json.dumps(convert(nb), ensure_ascii=False, indent=1) + "\n"
+            destination.write_text(text, encoding="utf-8")
+        else:
+            shutil.copy2(source, destination)
         print(f"{src_name} -> content/{dst_name}")
 
 
