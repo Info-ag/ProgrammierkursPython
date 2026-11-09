@@ -1,0 +1,4 @@
+jupyterlite-core==0.8.7
+jupyterlite-pyodide-kernel==0.8.7
+# needed by the build to index the notebooks (contents addon)
+jupyter-server

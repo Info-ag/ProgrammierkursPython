@@ -26,11 +26,18 @@ jobs:
         run: pip install -r jupyterlite/requirements.txt
 
       - name: Student-Notebooks zusammenstellen
-        run: python jupyterlite/prepare_content.py
-
-      - name: Seite bauen
+        run: python jupyterlite_student/prepare_content.py
+        
+      - name: Student Seite bauen
         working-directory: jupyterlite
         run: jupyter lite build --contents content --output-dir ../_site
+
+      - name: Teacher-Notebooks zusammenstellen
+        run: python jupyterlite_teacher/prepare_content.py
+
+      - name: Teacher Seite bauen
+        working-directory: jupyterlite
+        run: jupyter lite build --contents content --output-dir ../_site/teacher
 
       - name: Auf gh-pages veroeffentlichen
         uses: peaceiris/actions-gh-pages@v4

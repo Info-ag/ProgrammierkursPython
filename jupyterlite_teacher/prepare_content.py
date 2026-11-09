@@ -13,7 +13,7 @@ import shutil
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
-CONTENT = ROOT / "jupyterlite" / "content"
+CONTENT = ROOT / "jupyterlite_teacher" / "content"
 
 NOTEBOOKS = {
     "Programming_course_Day1_Block1_student_version.ipynb": "Tag1_Block1.ipynb",
@@ -25,6 +25,20 @@ NOTEBOOKS = {
     "Programming_course_Day2_Block3_student_version.ipynb": "Tag2_Block3.ipynb",
     "Programming_course_Day2_Block4_student_version.ipynb": "Tag2_Block4.ipynb",
     "Aufgabensammlung_student_version.ipynb": "Zusatz_Aufgabensammlung.ipynb",
+    "Programming_course_Day1_Block1_teacher_version.ipynb": "Tag1_Block1_teacher.ipynb",
+    "Programming_course_Day1_Block2_teacher_version.ipynb": "Tag1_Block2_teacher.ipynb",
+    "Programming_course_Day1_Block3_teacher_version.ipynb": "Tag1_Block3_teacher.ipynb",
+    "Programming_course_Day1_Block4_teacher_version.ipynb": "Tag1_Block4_teacher.ipynb",
+    "Programming_course_Day2_Block1_teacher_version.ipynb": "Tag2_Block1_teacher.ipynb",
+    "Programming_course_Day2_Block2_teacher_version.ipynb": "Tag2_Block2_teacher.ipynb",
+    "Programming_course_Day2_Block3_teacher_version.ipynb": "Tag2_Block3_teacher.ipynb",
+    "Programming_course_Day2_Block4_teacher_version.ipynb": "Tag2_Block4_teacher.ipynb",
+    "Aufgabensammlung_teacher_version.ipynb": "Zusatz_Aufgabensammlung_teacher.ipynb",
+    "COVID-19-Faelle_7-Tage-Inzidenz_Bundeslaender_withNames.csv": "COVID-19-Faelle_7-Tage-Inzidenz_Bundeslaender_withNames.csv",
+    "COVID-19-Faelle_7-Tage-Inzidenz_Bundeslaender.csv": "COVID-19-Faelle_7-Tage-Inzidenz_Bundeslaender.csv",
+    "COVID-19-Todesfaelle_Deutschland.csv": "COVID-19-Todesfaelle_Deutschland.csv",
+    "csv.ipynb": "csv.ipynb",
+    "matplotlib.ipynb": "matplotlib.ipynb",
 }
 
 LITE_INTRO = [
