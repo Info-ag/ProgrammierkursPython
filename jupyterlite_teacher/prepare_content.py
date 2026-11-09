@@ -34,11 +34,11 @@ NOTEBOOKS = {
     "Programming_course_Day2_Block3_teacher_version.ipynb": "Tag2_Block3_teacher.ipynb",
     "Programming_course_Day2_Block4_teacher_version.ipynb": "Tag2_Block4_teacher.ipynb",
     "Aufgabensammlung_teacher_version.ipynb": "Zusatz_Aufgabensammlung_teacher.ipynb",
-    "COVID-19-Faelle_7-Tage-Inzidenz_Bundeslaender_withNames.csv": "COVID-19-Faelle_7-Tage-Inzidenz_Bundeslaender_withNames.csv",
-    "COVID-19-Faelle_7-Tage-Inzidenz_Bundeslaender.csv": "COVID-19-Faelle_7-Tage-Inzidenz_Bundeslaender.csv",
-    "COVID-19-Todesfaelle_Deutschland.csv": "COVID-19-Todesfaelle_Deutschland.csv",
-    "csv.ipynb": "csv.ipynb",
-    "matplotlib.ipynb": "matplotlib.ipynb",
+    "CoronaExample/COVID-19-Faelle_7-Tage-Inzidenz_Bundeslaender_withNames.csv": "CoronaExample/COVID-19-Faelle_7-Tage-Inzidenz_Bundeslaender_withNames.csv",
+    "CoronaExample/COVID-19-Faelle_7-Tage-Inzidenz_Bundeslaender.csv": "CoronaExample/COVID-19-Faelle_7-Tage-Inzidenz_Bundeslaender.csv",
+    "CoronaExample/COVID-19-Todesfaelle_Deutschland.csv": "COVID-19-Todesfaelle_Deutschland.csv",
+    "CoronaExample/csv.ipynb": "csv.ipynb",
+    "CoronaExample/matplotlib.ipynb": "matplotlib.ipynb",
 }
 
 LITE_INTRO = [
