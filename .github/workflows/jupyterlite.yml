@@ -23,7 +23,7 @@ jobs:
           python-version: "3.12"
 
       - name: JupyterLite installieren
-        run: pip install -r jupyterlite/requirements.txt
+        run: pip install -r jupyterlite_student/requirements.txt
 
       - name: Student-Notebooks zusammenstellen
         run: python jupyterlite_student/prepare_content.py
